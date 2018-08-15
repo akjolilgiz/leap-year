@@ -1,6 +1,8 @@
 var leapYear = function(inputYear) {
 
-  if (inputYear % 100 === 0) {return false;}
+  if (inputYear % 400 === 0) {return true;}
+
+  else if (inputYear % 100 === 0) {return false;}
   else if(inputYear % 4 === 0) {
     return true;
   }
