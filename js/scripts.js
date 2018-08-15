@@ -17,6 +17,11 @@ $(document).ready(function() {
     var userInput = $("input#year").val();
 
     var output = leapYear(userInput);
-    alert(output);
+    if (output === true) {
+      output = "This is a leap year."
+    } else {
+      output = "This is NOT a leap year."
+    }
+    $("#result").text(output);
   });
 });
